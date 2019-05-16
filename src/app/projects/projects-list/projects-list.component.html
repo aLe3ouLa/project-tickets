@@ -5,10 +5,8 @@
   <div class="project-list">
     <ul class="project-list-ul">
       <li *ngFor="let project of projects" routerLinkActive="active" >
-        <a routerLink="{{project.id}}" > &bull;	 {{project.title}}</a>
+        <a (click)="onSelected(project)" > &bull;	 {{project.title}}</a>
       </li>
     </ul>
   </div>
 </div>
-
-<router-outlet></router-outlet>

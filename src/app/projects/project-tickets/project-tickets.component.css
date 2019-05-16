@@ -1,0 +1,42 @@
+.container {
+  height: 100vh;
+  width: 16rem;
+  background-color: #ddd;
+}
+
+.project-list--name {
+  color: #111;
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
+
+ul,
+li:hover > * {
+  color: #111;
+}
+
+.project-list-ul {
+list-style: none;
+margin: 0;
+padding: .2rem;
+}
+
+ul.project-list-ul li {
+  height: 2.5rem;
+  width: 100%;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.active,
+ul.project-list-ul li:hover {
+  background-color: rgba(211, 209, 207, 0.3);
+  color: rgb(192, 192, 192);
+  cursor: pointer;
+}
+
+ul.project-list-ul li a {
+  text-decoration: none;
+  color: #111;
+}

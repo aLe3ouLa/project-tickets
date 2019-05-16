@@ -26,13 +26,15 @@ ul.project-list-ul li {
   height: 2.5rem;
   width: 100%;
   margin: 1rem 0;
-  display: list-item;
+  display: flex;
+  align-items: center;
 }
 
 .active,
 ul.project-list-ul li:hover {
   background-color: rgba(211, 209, 207, 0.3);
   color: rgb(192, 192, 192);
+  cursor: pointer;
 }
 
 ul.project-list-ul li a {
