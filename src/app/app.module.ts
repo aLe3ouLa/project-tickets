@@ -8,6 +8,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectsListComponent } from './projects/projects-list/projects-list.component';
 import { ProjectTicketsComponent } from './projects/project-tickets/project-tickets.component';
+import { ProjectDetailsComponent } from './projects/project-details/project-details.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { ProjectTicketsComponent } from './projects/project-tickets/project-tick
     TopBarComponent,
     ProjectsComponent,
     ProjectsListComponent,
-    ProjectTicketsComponent
+    ProjectTicketsComponent,
+    ProjectDetailsComponent
   ],
   imports: [
     BrowserModule,
