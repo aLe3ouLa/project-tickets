@@ -5,7 +5,7 @@
   <div class="project-list">
     <ul class="project-list-ul">
       <li *ngFor="let ticket of tickets" routerLinkActive="active" >
-        <a  > {{ticket.title}}</a>
+        <a (click)="onSelected(ticket)" > {{ticket.title}}</a>
       </li>
     </ul>
   </div>

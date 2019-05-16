@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Ticket } from 'src/app/models/ticket.model';
 
 @Component({
@@ -8,9 +8,14 @@ import { Ticket } from 'src/app/models/ticket.model';
 })
 export class ProjectTicketsComponent implements OnInit {
   @Input() tickets: Ticket[];
+  @Output() ticketSelected = new EventEmitter<Ticket>();
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSelected(ticket) {
+    this.ticketSelected.emit(ticket);
   }
 
 }
