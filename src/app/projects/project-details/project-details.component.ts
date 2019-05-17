@@ -7,7 +7,6 @@ import { Ticket } from '../../models/ticket.model';
   styleUrls: ['./project-details.component.css']
 })
 export class ProjectDetailsComponent implements OnInit {
-
   @Input() selectedTicket: Ticket;
   constructor() { }
 

@@ -1,0 +1,11 @@
+.container {
+  height: 100vh;
+}
+.selected-ticket--title {
+  font-weight: bold;
+}
+
+.comment-title {
+  display: flex;
+  justify-content: space-between;
+}

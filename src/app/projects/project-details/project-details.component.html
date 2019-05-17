@@ -1,3 +1,24 @@
-<p>
-  project-details works!
-</p>
+<div class="container">
+  <div class="selected-ticket--title">{{ selectedTicket?.title }}</div>
+  <form>
+    <div>
+      <label for="user">User</label>
+      <input type="text" id="user" class="user" name="user" />
+    </div>
+
+    <div>
+      <label for="fileName">Input</label>
+      <input type="file" id="fileName" class="fileName" name="fileName" />
+    </div>
+
+    <hr />
+
+    <div class="comment-title">
+        <h3>Comments</h3>
+        <button type="button" class="btn btn-comment">Add comment</button>
+    </div>
+
+
+    <div class="comment-container" *ngIf="selectedTicket?.comment"></div>
+  </form>
+</div>

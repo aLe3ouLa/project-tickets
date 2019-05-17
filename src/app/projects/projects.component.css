@@ -1,3 +1,7 @@
 .container {
   display: flex;
 }
+
+app-project-details {
+  width: 100%;
+}
