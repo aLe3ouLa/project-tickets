@@ -5,7 +5,19 @@
 
 .selected-ticket--title {
   font-weight: bold;
+  margin-bottom: .3rem;
+}
+
+.selected-ticket--status {
   margin-bottom: 1rem;
+  font-size: .8rem;
+}
+.status-open {
+  color: green;
+}
+
+.status-closed {
+  color: red;
 }
 
 .selected-ticket--user {
@@ -19,7 +31,7 @@
 }
 
 .btn-comment {
-  background-color: #ddd;
+  background-color:rgb(221, 221, 221);
 }
 
 .hr {
@@ -44,4 +56,28 @@
 .label-filename {
   font-size: .8rem;
   color: #666;
+}
+
+.comment-list {
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 1px 6px #ddd;
+  margin-bottom: .5rem;
+}
+
+.comment--title {
+  font-weight: bold;
+}
+
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }

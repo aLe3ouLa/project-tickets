@@ -33,7 +33,7 @@ fieldset {
   margin-bottom: .5rem;
 }
 
-#title, #user, #project, #fileName {
+#title, #user, #body {
   display: block;
     width: 100%;
     height: 34px;

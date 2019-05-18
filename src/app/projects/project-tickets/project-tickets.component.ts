@@ -15,7 +15,7 @@ export class ProjectTicketsComponent implements OnInit {
   constructor(private _projectService: ProjectsService, private _route: ActivatedRoute) { }
 
   ngOnInit() {
-
+    /** Get the project you navigated to */
     this._route.params.subscribe(
       (params: Params) => {
         this.id = +params['id'];

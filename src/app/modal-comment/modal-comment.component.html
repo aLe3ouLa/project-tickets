@@ -1,0 +1,45 @@
+<div class="modal--container">
+  <!-- START modal Content-->
+  <div class="modal--content">
+    <h3>Add new Comment</h3>
+    <br />
+    <!-- START form-->
+    <form (ngSubmit)="onSuccess(f)" #f="ngForm">
+      <!-- START inputs-->
+      <div class="ticket--details" *ngIf="ticket">
+        <div class="user">
+          <label for="user">User</label>
+          <input type="text" id="user" name="user" ngModel required />
+        </div>
+
+        <div class="title">
+          <label for="title">Title</label>
+          <input type="text" id="title" name="title" ngModel required />
+        </div>
+
+        <div class="body">
+          <label for="user">Body</label>
+          <textarea
+            name="body"
+            id="body"
+            cols="30"
+            rows="10"
+            ngModel
+            required
+          ></textarea>
+        </div>
+      </div>
+      <!-- END inputs-->
+      <!-- START action buttons -->
+      <div class="action-buttons">
+        <button type="reset" class="btn btn-reset" (click)="onReset()">
+          Cancel
+        </button>
+        <button type="submit" class="btn btn-success">Save</button>
+      </div>
+      <!-- END action buttons -->
+    </form>
+    <!-- END form-->
+  </div>
+  <!-- END modal Content-->
+</div>

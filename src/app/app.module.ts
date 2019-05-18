@@ -12,6 +12,7 @@ import { ProjectTicketsComponent } from './projects/project-tickets/project-tick
 import { ProjectDetailsComponent } from './projects/project-details/project-details.component';
 import { ProjectStartComponent } from './projects/project-start/project-start.component';
 import { ModalAddIssueComponent } from './modal-add-issue/modal-add-issue.component';
+import { ModalCommentComponent } from './modal-comment/modal-comment.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ModalAddIssueComponent } from './modal-add-issue/modal-add-issue.compon
     ProjectTicketsComponent,
     ProjectDetailsComponent,
     ProjectStartComponent,
-    ModalAddIssueComponent
+    ModalAddIssueComponent,
+    ModalCommentComponent
   ],
   imports: [
     BrowserModule,

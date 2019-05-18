@@ -13,6 +13,7 @@ export class ProjectsListComponent implements OnInit {
   constructor(private projectService: ProjectsService) { }
 
   ngOnInit() {
+    /** Get all the projects */
     this.projects = this.projectService.getProjects();
   }
 

@@ -18,14 +18,17 @@ export class ModalAddIssueComponent implements OnInit {
   constructor(private _projectService: ProjectsService) { }
 
   ngOnInit() {
+    /** Get all the projects to fill the dropdown */
     this.projects = this._projectService.getProjects();
   }
 
   onReset() {
+    /** Reset the form, send an event to the parent to close the modal */
     this.showModal.emit(false);
   }
 
   onSuccess(form: NgForm) {
+    /** Submit form, with ngForms. Call the service to add the new Ticket. */
     const value = form.value;
     if (this.project) {
       let lastId = this.project.tickets[this.project.tickets.length - 1].id;
@@ -36,6 +39,7 @@ export class ModalAddIssueComponent implements OnInit {
   }
 
   onSelectingProject(event) {
+    /** The project the user selected to add a ticket */
     this.project = this._projectService.getProject(+(event.target.value));
   }
 

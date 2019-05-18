@@ -3,16 +3,20 @@
     <div class="ticket-list--name">
       Tickets
     </div>
+    <!-- START Ticket list of a project-->
     <div class="ticket-list">
       <ul class="ticket-list-ul">
-        <li *ngFor="let ticket of project?.tickets"  routerLink="tickets/{{ticket.id}}" routerLinkActive="active" >
-          {{ticket.title}}
+        <li
+          *ngFor="let ticket of project?.tickets"
+          routerLink="tickets/{{ ticket.id }}"
+          routerLinkActive="active"
+        >
+          {{ ticket.title }}
         </li>
       </ul>
     </div>
+    <!-- END Ticket list of a project-->
   </div>
-
+  <!-- Router link is for the child routes of the component -->
   <router-outlet></router-outlet>
 </div>
-
-

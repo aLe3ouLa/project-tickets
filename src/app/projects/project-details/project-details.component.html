@@ -1,22 +1,38 @@
 <div class="ticket-details--container">
+  <!-- START ticket info-->
   <div class="selected-ticket--title">{{ ticket?.title }}</div>
-  <div class="selected-ticket--user"> {{ticket?.user}} </div>
-  <hr class="hr hr--top">
-
+  <div class="selected-ticket--status" [ngClass]="{'status-open': ticket.status === 'OPEN', 'status-closed': ticket.status === 'CLOSED'}">{{ticket?.status}}</div>
+  <div class="selected-ticket--user">{{ ticket?.user }}</div>
+  <hr class="hr hr--top" />
   <form class="ticket-details--form">
     <div>
-      <label for="fileName" class="label-filename">Input file</label> <br/>
+      <label for="fileName" class="label-filename">Input file</label> <br />
       <input type="file" id="fileName" class="fileName" name="fileName" />
     </div>
-
-    <hr class="hr hr--bottom">
-
+    <!-- END Ticket info-->
+    <hr class="hr hr--bottom" />
+    <!-- START comments-->
     <div class="comment-title">
-        <h3>Comments</h3>
-        <button type="button" class="btn btn-comment">Add comment</button>
+      <h3>Comments</h3>
+      <button type="button" class="btn btn-comment" (click)="onAddComment()">
+        Add comment
+      </button>
     </div>
 
+    <div class="modal" *ngIf="showModal">
+      <app-modal-comment (showModal)="onReset()"></app-modal-comment>
+    </div>
 
-    <div class="comment-container" *ngIf="ticket?.comment"></div>
+    <div class="comment-container" *ngIf="ticket?.comment">
+      <div *ngFor="let comment of ticket?.comment" class="comment-list">
+        <span class="comment--title"> {{ comment.commentTitle }} </span> -
+        {{ comment.user }}
+
+        <div class="comment--body">
+          {{ comment.commentBody }}
+        </div>
+      </div>
+    </div>
+    <!-- END comments-->
   </form>
 </div>

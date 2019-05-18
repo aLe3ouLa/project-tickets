@@ -6,6 +6,7 @@ export class Ticket {
     public title: string,
     public user: string,
     public filename: string,
+    public status: string,
     public comment: Comment[]
   ) {}
 }
