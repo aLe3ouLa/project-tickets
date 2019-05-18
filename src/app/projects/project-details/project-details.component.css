@@ -1,11 +1,21 @@
-.container {
+.ticket-details--container {
   height: 100vh;
+  width: 100%;
+  padding: 1rem;
 }
+
 .selected-ticket--title {
+
   font-weight: bold;
 }
+
 
 .comment-title {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.btn-comment {
+  background-color: grey;
 }

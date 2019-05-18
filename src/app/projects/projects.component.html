@@ -1,6 +1,4 @@
 <div class="container">
-  <app-projects-list (projectSelected)="selectedProject = $event"></app-projects-list>
-  <app-project-tickets [tickets]="selectedProject?.tickets" *ngIf="selectedProject" (ticketSelected)="selectedTicket = $event"></app-project-tickets>
-  <app-project-details [selectedTicket]="selectedTicket" *ngIf="selectedTicket"></app-project-details>
-  <!-- <router-outlet></router-outlet> -->
+  <app-projects-list></app-projects-list>
+  <router-outlet></router-outlet>
 </div>

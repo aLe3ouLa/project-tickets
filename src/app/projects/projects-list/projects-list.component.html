@@ -1,11 +1,11 @@
-<div class="container">
+<div class="project-list--container">
   <div class="project-list--name">
     Projects
   </div>
   <div class="project-list">
     <ul class="project-list-ul">
-      <li *ngFor="let project of projects" routerLinkActive="active" >
-        <a (click)="onSelected(project)" > &bull;	 {{project.title}}</a>
+      <li *ngFor="let project of projects" routerLink="{{project.id}}" routerLinkActive="active" >
+         &bull; {{project.title}}
       </li>
     </ul>
   </div>

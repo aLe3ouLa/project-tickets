@@ -1,12 +1,18 @@
-<div class="container">
-  <div class="project-list--name">
-    Tickets
+<div class="ticket-list">
+  <div class="ticket-list--container">
+    <div class="ticket-list--name">
+      Tickets
+    </div>
+    <div class="ticket-list">
+      <ul class="ticket-list-ul">
+        <li *ngFor="let ticket of project?.tickets"  routerLink="tickets/{{ticket.id}}" routerLinkActive="active" >
+          {{ticket.title}}
+        </li>
+      </ul>
+    </div>
   </div>
-  <div class="project-list">
-    <ul class="project-list-ul">
-      <li *ngFor="let ticket of tickets" routerLinkActive="active" >
-        <a (click)="onSelected(ticket)" > {{ticket.title}}</a>
-      </li>
-    </ul>
-  </div>
+
+  <router-outlet></router-outlet>
 </div>
+
+

@@ -1,13 +1,18 @@
-.container {
+.ticket-list {
+  display: flex;
+  width: 100%;
+}
+
+.ticket-list--container {
   height: 100vh;
   width: 16rem;
   background-color: #ddd;
 }
 
-.project-list--name {
+.ticket-list--name {
   color: #111;
-  padding: 0.5rem;
-  text-transform: uppercase;
+  padding: 1rem;
+  font-weight: bold;
 }
 
 ul,
@@ -15,28 +20,33 @@ li:hover > * {
   color: #111;
 }
 
-.project-list-ul {
+.ticket-list-ul {
 list-style: none;
 margin: 0;
 padding: .2rem;
+width: 100%;
 }
 
-ul.project-list-ul li {
-  height: 2.5rem;
+ul.ticket-list-ul li {
+  height:  2.5rem;
   width: 100%;
-  margin: 1rem 0;
+  padding: .5rem;
   display: flex;
   align-items: center;
 }
 
-.active,
-ul.project-list-ul li:hover {
-  background-color: rgba(211, 209, 207, 0.3);
+
+ul.ticket-list-ul li:hover {
+  background-color: rgba(211, 209, 207, 0.5);
   color: rgb(192, 192, 192);
   cursor: pointer;
 }
 
-ul.project-list-ul li a {
+.active{
+  background-color: #04265881;
+}
+
+ul.ticket-list-ul li a {
   text-decoration: none;
   color: #111;
 }

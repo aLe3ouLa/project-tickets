@@ -8,15 +8,8 @@ import { Ticket } from '../models/ticket.model';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
-  selectedProject: Project;
-  selectedTicket: Ticket;
   constructor() { }
 
   ngOnInit() {
   }
-
-  onSelectedProject() {
-
-  }
-
 }
