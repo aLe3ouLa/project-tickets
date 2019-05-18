@@ -4,8 +4,12 @@
   </div>
   <div class="project-list">
     <ul class="project-list-ul">
-      <li *ngFor="let project of projects" routerLink="{{project.id}}" routerLinkActive="active" >
-         &bull; {{project.title}}
+      <li
+        *ngFor="let project of projects"
+        routerLink="{{ project.id }}"
+        routerLinkActive="active"
+      >
+        <span class="bullet">&bull;&nbsp;</span> {{ project.title }}
       </li>
     </ul>
   </div>

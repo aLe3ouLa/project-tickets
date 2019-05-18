@@ -1,17 +1,15 @@
 <div class="ticket-details--container">
   <div class="selected-ticket--title">{{ ticket?.title }}</div>
-  <form>
-    <div>
-      {{ticket?.user}}
-    </div>
-    <hr>
+  <div class="selected-ticket--user"> {{ticket?.user}} </div>
+  <hr class="hr hr--top">
 
+  <form class="ticket-details--form">
     <div>
-      <label for="fileName">Input</label>
+      <label for="fileName" class="label-filename">Input file</label> <br/>
       <input type="file" id="fileName" class="fileName" name="fileName" />
     </div>
 
-    <hr />
+    <hr class="hr hr--bottom">
 
     <div class="comment-title">
         <h3>Comments</h3>

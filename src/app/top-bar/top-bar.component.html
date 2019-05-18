@@ -3,9 +3,13 @@
         <a href="#"><img src="https://mellongroup.com/assets/uploads/mellongroup_logo_25yrs.svg" class="img-responsive" alt=""></a>
         <ul class="navigation-bar--buttons">
           <li>
-            <button type="button" class="btn btn-request">New request</button>
+            <button type="button" class="btn btn-request" (click)="onNewIssue()">New request</button>
           </li>
           <li> <button type="button" class="btn">Logout</button></li>
         </ul>
       </nav>
+</div>
+
+<div class="modal" *ngIf="showModal">
+  <app-modal-add-issue (showModal)="onReset()"></app-modal-add-issue>
 </div>

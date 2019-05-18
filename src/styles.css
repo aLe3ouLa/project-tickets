@@ -10,3 +10,26 @@ body {
   /* padding: 0; */
   box-sizing: border-box;
 }
+
+.btn {
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: transparent;
+  padding: .5rem 1rem;
+  font-size: 14px;
+  line-height: 1.4;
+  border-radius: 2px;
+  user-select: none;
+}
+
+app-project-tickets {
+  width: 100%;
+}
+
+app-project-details {
+  width: 80%;
+}

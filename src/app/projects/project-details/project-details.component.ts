@@ -23,8 +23,8 @@ export class ProjectDetailsComponent implements OnInit, OnDestroy {
         console.log(params);
         this.id = +params['id'];
         this.ticketSubscription = this._route.params.subscribe(
-          (params: Params) => {
-            this.ticketId = +params['ticketId'];
+          (ticketParams: Params) => {
+            this.ticketId = +ticketParams['ticketId'];
             this.ticket = this._projectService.getProjectTicket(this.id, this.ticketId);
           }
         );

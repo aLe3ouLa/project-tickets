@@ -1,47 +1,41 @@
 .project-list--container {
-  height: 100vh;
+  height: 95vh;
   width: 16rem;
   background-color: #0747a6;
 }
 
 .project-list--name {
-  color: #fff;
+  color: #eee;
   padding: 1rem;
   font-weight: bold;
 }
 
-ul,
-li:hover > * {
-  color: #fff;
-}
-
 .project-list-ul {
-list-style: none;
-margin: 0;
-padding: .2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0.2rem;
 }
 
 ul.project-list-ul li {
-  height:  2.5rem;
+  height: 2.5rem;
   width: 100%;
-  padding: .5rem;
+  padding: 0.5rem;
   display: flex;
   align-items: center;
+  color: #eee;
 }
-
 
 ul.project-list-ul li:hover {
   background-color: #04265881;
-  color: rgb(192, 192, 192);
+  color: #fff;
   cursor: pointer;
 }
 
-.active{
+.active {
   background-color: #04265881;
+  color: #fff !important;
 }
 
-
-ul.project-list-ul li a {
-  text-decoration: none;
-  color: white;
+.bullet {
+  font-size: 1.6rem;
 }

@@ -1,14 +1,16 @@
 .ticket-details--container {
-  height: 100vh;
   width: 100%;
   padding: 1rem;
 }
 
 .selected-ticket--title {
-
   font-weight: bold;
+  margin-bottom: 1rem;
 }
 
+.selected-ticket--user {
+  margin-bottom: 1rem;
+}
 
 .comment-title {
   display: flex;
@@ -17,5 +19,29 @@
 }
 
 .btn-comment {
-  background-color: grey;
+  background-color: #ddd;
+}
+
+.hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+.hr--top {
+  margin: 0 0 2rem 0;
+}
+
+.hr--bottom {
+  margin: 2rem 0 0 0;
+}
+
+.comment-title {
+  padding: 1rem;
+}
+
+.label-filename {
+  font-size: .8rem;
+  color: #666;
 }

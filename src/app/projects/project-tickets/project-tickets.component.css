@@ -4,7 +4,7 @@
 }
 
 .ticket-list--container {
-  height: 100vh;
+  height: 95vh;
   width: 16rem;
   background-color: #ddd;
 }
@@ -37,13 +37,12 @@ ul.ticket-list-ul li {
 
 
 ul.ticket-list-ul li:hover {
-  background-color: rgba(211, 209, 207, 0.5);
-  color: rgb(192, 192, 192);
+  background-color: rgba(187, 187, 187, 0.5);
   cursor: pointer;
 }
 
 .active{
-  background-color: #04265881;
+  background-color: rgba(187, 187, 187, 0.5);
 }
 
 ul.ticket-list-ul li a {
