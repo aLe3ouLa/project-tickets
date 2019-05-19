@@ -32,7 +32,7 @@ export class ModalAddIssueComponent implements OnInit {
     const value = form.value;
     if (this.project) {
       let lastId = this.project.tickets[this.project.tickets.length - 1].id;
-      const ticket = new Ticket(++lastId, value.title, value.user, value.fileName, [] );
+      const ticket = new Ticket(++lastId, value.title, value.user, value.fileName, 'OPEN' , [] );
       this._projectService.addTicketToProject(this.project.id, ticket);
       this.showModal.emit(false);
     }
