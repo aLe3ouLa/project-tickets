@@ -33,19 +33,23 @@ export class ProjectsService {
   ];
 
   getProjects() {
+    /** Return a copy to all projects -- not the original array */
     return this.project.slice();
   }
 
   getProject(index: number) {
+    /** Return a specific project */
     return this.project.find((project) => project.id === index);
   }
 
   addTicketToProject(projectId: number, ticket: Ticket) {
+    /** Add a new ticket to a project */
     const selectedProject = this.project.find((project) => project.id === projectId);
     selectedProject.tickets.push(ticket);
   }
 
   addCommentToTicket(projectId: number, ticketId: number, comment: Comment) {
+    /** Add a new comment to a ticket */
     const selectedProject = this.project.find((project) => project.id === projectId);
     const selectedTicket = selectedProject.tickets.find((ticket) => ticket.id === ticketId);
     selectedTicket.comment.push(comment);
@@ -53,6 +57,7 @@ export class ProjectsService {
   }
 
   getProjectTicket(projectId: number, ticketId: number) {
+    /** Return a ticket of a project */
     const selectedProject = this.project.find((project) => project.id === projectId);
     return selectedProject ? (selectedProject.tickets).find((ticket) => ticket.id === ticketId) : null;
   }
