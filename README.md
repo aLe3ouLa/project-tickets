@@ -1,4 +1,6 @@
-# Project Issues
+# Project Issuer
+
+Add new issues to projects, view project with their opened/closed ticket. Add comments that resolve the problem.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4.
 
