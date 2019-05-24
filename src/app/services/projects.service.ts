@@ -9,7 +9,7 @@ export class ProjectsService {
   projectSelected = new Subject<Project>();
   commentAdded = new Subject<Ticket>();
   private project: Project[] = [
-    new Project(1, 'Mellon Change Management', [
+    new Project(1, 'Project Change Management', [
       new Ticket(1, 'Ticket Title 3', 'user@user.gr', '', 'OPEN', [
         new Comment(1, 'Comment Title', 'Comment Body', 'user@user.gr'),
         new Comment(2, 'Comment Title 1', 'Comment Body 1', 'user@user.gr'),
@@ -19,7 +19,7 @@ export class ProjectsService {
       ]),
       new Ticket(3, 'Ticket Title 5', 'user@user.gr', '', 'OPEN', [])
     ]),
-    new Project(2, 'Mellon Field Services', [
+    new Project(2, 'Field Services', [
       new Ticket(4, 'An issue to the MFS app', 'user@user.gr', '', 'OPEN', []),
     ]),
     new Project(3, 'Jira', [
